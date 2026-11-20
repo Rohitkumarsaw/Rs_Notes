@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy policy for RS Notes - a fully offline, private note-taking app for Android." />
+  <title>Privacy Policy - RS Notes</title>
+  <style>
+    :root {
+      --bg: #07080f;
+      --card: #0f1320;
+      --card-2: #141a2a;
+      --border: #232d42;
+      --text: #e6edf7;
+      --muted: #9aa8bf;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+      --good: #34d399;
+      --warn: #fbbf24;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      background: radial-gradient(1100px 600px at 50% -10%, #12203a 0%, var(--bg) 60%);
+      color: var(--text);
+      line-height: 1.75;
+      padding: 40px 16px 64px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 840px; margin: 0 auto; }
+    .card {
+      background: linear-gradient(180deg, rgba(20,26,42,.92), rgba(11,15,24,.92));
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 40px 38px;
+      box-shadow: 0 24px 60px rgba(0,0,0,.45);
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(34,211,238,.1);
+      border: 1px solid rgba(34,211,238,.35);
+      color: var(--accent);
+      font-size: 11.5px; font-weight: 700; letter-spacing: 1.1px;
+      text-transform: uppercase;
+      padding: 6px 13px; border-radius: 999px; margin-bottom: 16px;
+    }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--good); box-shadow: 0 0 10px var(--good); }
+    h1 { font-size: 30px; line-height: 1.25; color: #fff; margin-bottom: 10px; letter-spacing: -.5px; }
+    h2 {
+      font-size: 18px; color: var(--accent); margin: 30px 0 10px;
+      padding-top: 6px; letter-spacing: -.2px;
+    }
+    h2::before { content: ""; display: inline-block; width: 4px; height: 17px; background: var(--accent); border-radius: 3px; margin-right: 10px; vertical-align: -2px; }
+    p, li { font-size: 15px; color: var(--text); }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 14px 20px; }
+    li { margin-bottom: 7px; }
+    .meta {
+      font-size: 13px; color: var(--muted); padding-bottom: 22px;
+      border-bottom: 1px solid var(--border); margin-bottom: 22px;
+    }
+    .meta b { color: #cbd5e1; font-weight: 600; }
+    .summary {
+      background: rgba(52,211,153,.08);
+      border: 1px solid rgba(52,211,153,.3);
+      border-left: 4px solid var(--good);
+      border-radius: 12px; padding: 16px 20px; margin-bottom: 8px;
+      font-size: 15px;
+    }
+    .summary strong { color: var(--good); }
+    table { width: 100%; border-collapse: collapse; margin: 14px 0 6px; font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .6px; width: 42%; }
+    td { color: var(--text); }
+    .yes { color: var(--good); font-weight: 600; }
+    .no  { color: var(--warn); font-weight: 600; }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: rgba(255,255,255,.06); border: 1px solid var(--border);
+      padding: 1px 6px; border-radius: 5px; font-size: .9em; color: #bae6fd;
+    }
+    .note {
+      background: rgba(251,191,36,.07);
+      border: 1px solid rgba(251,191,36,.28);
+      border-radius: 10px; padding: 14px 18px; margin: 16px 0;
+      font-size: 14px; color: #fde68a;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--border);
+      font-size: 12.5px; color: var(--muted); text-align: center;
+    }
+    @media (max-width: 600px) {
+      body { padding: 20px 12px 40px; }
+      .card { padding: 26px 20px; border-radius: 16px; }
+      h1 { font-size: 24px; }
+      th, td { display: block; width: 100%; border: none; padding: 6px 0; }
+      th { padding-top: 10px; }
+    }
+    @media print {
+      body { background: #fff; color: #111; padding: 0; }
+      .card { box-shadow: none; border: none; background: #fff; }
+      h1, h2, td, p, li { color: #111; }
+      h2::before { background: #111; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="header">
+        <span class="badge"><span class="dot"></span> 100% Offline &amp; Private</span>
+        <h1>Privacy Policy for RS Notes</h1>
+        <p class="meta">
+          <b>App:</b> RS Notes &nbsp;·&nbsp;
+          <b>Package:</b> <code>com.rohit.rsnotes</code> &nbsp;·&nbsp;
+          <b>Version:</b> 1.2.1 &nbsp;·&nbsp;<br />
+          <b>Effective date:</b> November 20, 2026 &nbsp;·&nbsp;
+          <b>Developer:</b> Rohit Kumar
+        </p>
+      </div>
+
+      <div class="summary">
+        <strong>In short:</strong> RS Notes has no internet permission and no accounts. We do not collect, transmit, store or share your notes, PIN, or any personal data. Everything you write stays on your Android device, and only you can export it.
+      </div>
+
+      <h2>1. Who we are</h2>
+      <p>
+        RS Notes is a personal note-taking application developed by Rohit Kumar. This policy explains what data the app handles on your device. It applies to version 1.2.1 and later.
+      </p>
+
+      <h2>2. Information we collect</h2>
+      <p>
+        <strong>None.</strong> RS Notes does not ask you to create an account or sign in. We do not collect your name, email address, phone number, location, device identifiers, contacts, photos, or any other personal information.
+      </p>
+      <p>
+        There are no analytics SDKs, advertising networks, crash-reporting tools, tracking libraries, or cloud services inside the app. Your usage is not monitored or monetised.
+      </p>
+
+      <h2>3. Data stored on your device</h2>
+      <p>
+        The app stores only what is needed for it to work, locally on your phone:
+      </p>
+      <table>
+        <tr><th>Note titles and content</th><td>Stored locally using Android private app storage (<code>SharedPreferences</code>)</td></tr>
+        <tr><th>PIN preference</th><td>Stored locally on your device</td></tr>
+        <tr><th>Theme and display settings</th><td>Stored locally on your device</td></tr>
+        <tr><th>Exported <code>.txt</code> files</th><td>Saved only to your device's Downloads folder, when you tap export</td></tr>
+      </table>
+      <p>
+        The developer has no access to any of this data. Nothing is uploaded, synced, backed up to a server, or shared with a third party.
+      </p>
+
+      <div class="note">
+        <strong>About the PIN lock:</strong> the 4-digit PIN is a local screen gate to discourage casual access. It is <strong>not</strong> encryption of the stored note files. For stronger protection, also use your device's own screen lock / encryption.
+      </div>
+
+      <h2>4. Internet access &amp; permissions</h2>
+      <p>
+        RS Notes declares <strong>no <code>android.permission.INTERNET</code></strong> permission. The app is technically unable to send data over the network.
+      </p>
+      <table>
+        <tr><th>INTERNET</th><td class="no">Not requested</td></tr>
+        <tr><th>Location / Contacts / Camera / Microphone</th><td class="no">Not requested</td></tr>
+        <tr><th>Storage / Files access</th><td class="no">Not requested</td></tr>
+        <tr><th>Notifications or ads</th><td class="no">None</td></tr>
+        <tr><th><code>DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION</code></th><td class="yes">Standard Android platform permission for a local receiver. It grants no access to your data or the internet.</td></tr>
+      </table>
+
+      <h2>5. Sharing and disclosure</h2>
+      <p>
+        We do not sell, rent, share, or disclose any information to anyone. We do not use your data for advertising, profiling, or analytics. There are no third parties involved in the app's operation.
+      </p>
+
+      <h2>6. Your control and data deletion</h2>
+      <ul>
+        <li>You can edit or delete any note inside the app at any time.</li>
+        <li>Uninstalling RS Notes, or clearing its data from Android Settings, permanently removes all locally stored notes, settings and PIN from your device.</li>
+        <li>Exported <code>.txt</code> files are ordinary files in your Downloads folder. Uninstalling the app does not delete them; delete them yourself if you no longer need them.</li>
+        <li>There is no server-side copy of your data, so there is nothing to request or delete from us.</li>
+      </ul>
+
+      <h2>7. Children's privacy</h2>
+      <p>
+        RS Notes does not collect personal information from anyone, including children. The app is suitable for all ages.
+      </p>
+
+      <h2>8. Security</h2>
+      <p>
+        Your data stays inside your device's app-private storage. We recommend keeping your device screen locked and updated. Please remember that anyone with physical access to an unlocked device may be able to open the app.
+      </p>
+
+      <h2>9. Changes to this policy</h2>
+      <p>
+        If a future version adds a feature that changes how data is handled, this policy will be updated and the effective date above will change. The current version always applies to the app version listed at the top.
+      </p>
+
+      <h2>10. Contact</h2>
+      <p>
+        Questions, feedback, or concerns about this policy are welcome:
+      </p>
+      <p>
+        <strong>Developer:</strong> Rohit Kumar<br />
+        <strong>Email:</strong> <a href="mailto:dellofficial795@gmail.com">dellofficial795@gmail.com</a>
+      </p>
+
+      <div class="footer">
+        &copy; 2026 RS Notes by Rohit Kumar. All rights reserved. &nbsp;·&nbsp; Last updated: November 20, 2026
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
