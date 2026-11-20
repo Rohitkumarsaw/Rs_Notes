@@ -680,7 +680,8 @@
                                 <span>VERIFIED RELEASE BUILD • SHA-256 CHECKED</span>
                             </div>
                             <h2 class="text-3xl sm:text-4xl font-bold text-white">Download RS Notes for Android</h2>
-                            <p class="text-slate-400 text-sm mt-2 font-mono">Package: com.rohit.rsnotes • Version 1.2.1 (Universal - arm64 / armv7 / x86_64)</p>                            <p id="apk-setup-note" class="text-[11px] font-mono text-amber-300/80 mt-1">APK link pending - set APK_URL in this file, ya page ko ?apk=YOUR_URL se kholein.</p>
+                            <p class="text-slate-400 text-sm mt-2 font-mono">Package: com.rohit.rsnotes • Version 1.2.1 (Universal - arm64 / armv7 / x86_64)</p>
+                            <p class="text-[11px] font-mono text-emerald-300/80 mt-1">Hosted on GitHub Releases • <a href="https://github.com/Rohitkumarsaw/Rs_Notes/releases/tag/v1.2.1" target="_blank" rel="noopener" class="text-cyan-300 hover:underline">View release notes ↗</a></p>
                         </div>
 
                         <button onclick="triggerApkDownload()" class="w-full md:w-auto btn-neon-primary px-8 py-4 rounded-2xl text-base flex items-center justify-center gap-3 shrink-0 cursor-pointer">
@@ -829,22 +830,17 @@
 
     <!-- VANILLA JAVASCRIPT INTERACTIVITY -->
     <script>
-        /* ===== APK LINK CONFIG - yahan apna hosted APK URL paste karein =====
-           Example: const APK_URL = 'https://example.com/RS_Notes_v1.2.1_universal.apk';
-           Ya page ko aise bhi khol sakte hain: page.html?apk=https://example.com/app.apk
+        /* ===== APK LINK CONFIG =====
+           Direct download URL: GitHub release v1.2.1 asset.
+           Override with ?apk=YOUR_URL in the page URL if you move the file.
         ------------------------------------------------------------------ */
-        const APK_URL = 'PASTE_APK_URL_HERE';
+        const APK_URL = 'https://github.com/Rohitkumarsaw/Rs_Notes/releases/download/v1.2.1/app-release.apk';
 
         function getApkUrl() {
             const fromQuery = new URLSearchParams(window.location.search).get('apk');
             const value = (fromQuery || APK_URL || '').trim();
-            return (value && value !== 'PASTE_APK_URL_HERE') ? value : '';
+            return value || '';
         }
-
-        window.addEventListener('DOMContentLoaded', () => {
-            const note = document.getElementById('apk-setup-note');
-            if (note && getApkUrl()) note.classList.add('hidden');
-        });
 
         /* -----------------------------------------------------------
            1. SUBTLE 3D PARTICLE & GEOMETRIC CANVAS BACKGROUND
@@ -1088,7 +1084,7 @@
         function triggerApkDownload() {
             const apkUrl = getApkUrl();
             if (!apkUrl) {
-                alert('APK link abhi set nahi hai. HTML me APK_URL par apna hosted APK URL paste karein, ya page ko ?apk=YOUR_URL se kholein.');
+                alert('APK link available nahi hai. Page ko ?apk=YOUR_URL se kholein ya APK_URL set karein.');
                 return;
             }
             const modal = document.getElementById('download-modal');
