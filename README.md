@@ -34,10 +34,9 @@ No account. No ads. No analytics. No `INTERNET` permission. Your notes never lea
 
 ## 📥 Download
 
-> **Repo owner:** replace the placeholder links below before publishing.
-
 | Source | Link |
 |---|---|
+| **Official website** | [rohitkumarsaw.github.io/Rs_Notes](https://rohitkumarsaw.github.io/Rs_Notes/) |
 | **Direct APK (universal)** | [Download v1.2.1 APK](https://github.com/Rohitkumarsaw/Rs_Notes/releases/download/v1.2.1/app-release.apk) |
 | Release page / changelog | [GitHub release v1.2.1](https://github.com/Rohitkumarsaw/Rs_Notes/releases/tag/v1.2.1) |
 | Uptodown | Coming soon |
@@ -73,7 +72,7 @@ RS Notes contains **no `INTERNET` permission**. It cannot send data anywhere.
 
 Only the standard platform permission required for a local notification receiver (`DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`) is declared. No storage, contacts, location or network permission is requested.
 
-[Privacy policy](privacy-policy.html) — hosted publicly via GitHub Pages.
+[Privacy policy](https://rohitkumarsaw.github.io/Rs_Notes/privacy-policy.html) — hosted publicly via GitHub Pages.
 
 ---
 
